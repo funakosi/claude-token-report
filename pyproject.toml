@@ -1,0 +1,17 @@
+[project]
+name = "count-token"
+version = "0.1.0"
+description = "Claude Code のログから日別トークン消費量と料金を集計する"
+readme = "README.md"
+authors = [
+    { name = "Akira Funakoshi", email = "funakosi@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+count-token = "count_token.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
