@@ -3,8 +3,8 @@ from datetime import date
 from pathlib import Path
 
 
-from count_token import cli as ct
-from count_token import pricing
+from claude_token_report import cli as ct
+from claude_token_report import pricing
 
 
 def rec(mid, model="claude-sonnet-4-5", out=100, ts="2026-11-16T02:00:00Z", **kw):

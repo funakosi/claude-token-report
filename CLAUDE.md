@@ -1,4 +1,4 @@
-# count_token — Claude Code トークン消費量・料金集計スクリプト
+# claude-token-report — Claude Code トークン消費量・料金集計スクリプト
 
 Claude Code のローカルログから日別のトークン消費量を集計し、料金（USD / 円換算）を算出する Python スクリプトを作る。
 
@@ -7,11 +7,11 @@ Claude Code のローカルログから日別のトークン消費量を集計�
 - 言語: Python 3.11+（標準ライブラリのみ。外部依存を増やさない）
 - パッケージ管理: uv（src レイアウト、ビルドバックエンドは hatchling）
 - 構成
-  - `src/count_token/cli.py`: 集計・出力・CLI（`main`）
-  - `src/count_token/pricing.py`: 単価表。価格改定時はここだけ直す
-  - `src/count_token/xlsx_writer.py`: .xlsx 書き出し
+  - `src/claude_token_report/cli.py`: 集計・出力・CLI（`main`）
+  - `src/claude_token_report/pricing.py`: 単価表。価格改定時はここだけ直す
+  - `src/claude_token_report/xlsx_writer.py`: .xlsx 書き出し
   - `tests/`: unittest
-- 実行: `uv run count-token [オプション]`（または `uv run python -m count_token`）
+- 実行: `uv run claude-token-report [オプション]`（または `uv run python -m claude_token_report`）
 - テスト: `uv run python -m unittest discover tests`
 
 ## データソース

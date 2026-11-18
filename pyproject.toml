@@ -1,16 +1,15 @@
 [project]
-name = "count-token"
+name = "claude-token-report"
 version = "0.1.0"
 description = "Claude Code のログから日別トークン消費量と料金を集計する"
 readme = "README.md"
-authors = [
-    { name = "Akira Funakoshi", email = "funakosi@gmail.com" }
-]
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.11"
 dependencies = []
 
 [project.scripts]
-count-token = "count_token.cli:main"
+claude-token-report = "claude_token_report.cli:main"
 
 [build-system]
 requires = ["hatchling"]
